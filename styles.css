@@ -1,70 +1,82 @@
-*{
-  margin: 0;
-  padding: 0;
+nav{
+  flex: 1;
+  text-align: right;
+  margin-top: 100;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+nav ul li a{
   text-decoration: none;
-  background-color: rgb(6, 6, 59);
+  color: rgb(255, 255, 255);
+  font-size: 18px;
 }
-.portfolio {
-  height: 100vh;
-  overflow: hidden;
+nav ul li a:hover{
+  color: #0f1f7c;
 }
-
-.navbar {
-  width: 100%;
-  height: 70px;
-  background-color: rgb(6, 6, 59);
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  position: absolute;
+#home {
+  margin-top: 100px;
+  font-size: 30px;
+  text-align: center;
 }
-.wrapper {
-  padding: 2%;
+#mainpicture {
+  margin-top: 100px;
+  text-align: center;
 }
-a {
-  border-radius: 50%;
-  height: .7rem;
-  width: auto;
-  background-color: black;
-  transition: 0.08s;
+h1, p, h2 {
   color: whitesmoke;
-  padding: 1rem;
-
 }
-
-a:hover {
-  background-color: whitesmoke;
-  color: black;
-
+#aboutmeheader {
+  margin-top: 100px;
+  font-size: 35px;
+  text-align: center;
 }
-
-.sections {
-  width: 100%;
-  height: calc(100vh - 70px);
-  position: absolute;
-  top: 70px;
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-  scrollbar-width: none;
-  background-color: rgb(6, 6, 59);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+#aboutme {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 25px;
 }
-
-.mainpage {
-  width: 100vw;
-  height: calc(100vh - 70px);
-  
+#projectsheader {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
 }
-
-#main{
-  width: 100vw;
-  height: calc(100vh - 70px);
-  scroll-snap-align: start;
+#projects {
+  margin-top: 100px;
+  font-size: 35px;
+  text-align: center;
 }
-#aboutMe{
-  width: 100vw;
-  height: calc(100vh - 70px);
+.card {
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+  margin-left: 50px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.card-deck {
+  padding-right: 5%;
+  max-width: 80%;
+  margin-left: 25%;
+}
+#contactheader {
+  margin-top: 100px;
+  font-size: 35px;
+  text-align: center;
+}
+#contact {
+  overflow: hidden;
+  text-align: center;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+#contact img {
+  height: 25px;
+  margin: 20px;
+  cursor: pointer;
 }
