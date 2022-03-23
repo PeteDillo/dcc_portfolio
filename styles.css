@@ -1,46 +1,70 @@
-* {
-  overflow: hidden;
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  background-color: rgb(6, 6, 59);
 }
 .portfolio {
   height: 100vh;
+  overflow: hidden;
 }
 
 .navbar {
   width: 100%;
   height: 70px;
-  background-color: blue;
+  background-color: rgb(6, 6, 59);
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  position: absolute;
 }
 .wrapper {
   padding: 2%;
 }
 a {
   border-radius: 50%;
+  height: .7rem;
+  width: auto;
   background-color: black;
   transition: 0.08s;
+  color: whitesmoke;
+  padding: 1rem;
+
 }
 
 a:hover {
   background-color: whitesmoke;
+  color: black;
+
 }
 
 .sections {
   width: 100%;
   height: calc(100vh - 70px);
-  position: relative;
+  position: absolute;
   top: 70px;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
   scrollbar-width: none;
-  background-color: blueviolet;
+  background-color: rgb(6, 6, 59);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
+
 .mainpage {
+  width: 100vw;
+  height: calc(100vh - 70px);
+  
+}
+
+#main{
   width: 100vw;
   height: calc(100vh - 70px);
   scroll-snap-align: start;
 }
 #aboutMe{
-  background-color: rgb(255, 187, 0);
+  width: 100vw;
+  height: calc(100vh - 70px);
 }
